@@ -21,7 +21,10 @@ jobs:
          java-version: 11
      
      - name: Build
-       run: bash ./gradlew assembleRelease
+       run: bash ./gradlew assembleApkstoreRelease
      
-     - name: Show structure
-       run: ls
+     - name: Upload
+       uses: actions/upload-artifact@v3
+       with:
+        name: JARs
+        path: build/
