@@ -22,9 +22,9 @@ jobs:
      
      - name: Build
        run: bash ./gradlew assembleApkstoreRelease
-     
+     - run: ls build/
      - name: Upload
        uses: actions/upload-artifact@v3
        with:
         name: JARs
-        path: build/
+        path: build
