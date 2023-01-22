@@ -21,10 +21,10 @@ jobs:
          java-version: 11
      
      - name: Build
-       run: bash ./gradlew assembleApkstoreRelease
-     - run: ls build/kotlin
+       run: bash ./gradlew assembleApkstoreDebug
+       
      - name: Upload
        uses: actions/upload-artifact@v3
        with:
         name: JARs
-        path: build
+        path: presentation/build/outputs/apk/apkstore/debug/presentation-apkstore-debug.apk
