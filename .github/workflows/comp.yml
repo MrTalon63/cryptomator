@@ -26,5 +26,5 @@ jobs:
      - name: Upload
        uses: actions/upload-artifact@v3
        with:
-        name: JARs
+        name: APK file
         path: presentation/build/outputs/apk/apkstore/debug/presentation-apkstore-debug.apk
