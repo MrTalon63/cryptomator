@@ -22,7 +22,7 @@ jobs:
      
      - name: Build
        run: bash ./gradlew assembleApkstoreRelease
-     - run: ls build/
+     - run: ls build/kotlin
      - name: Upload
        uses: actions/upload-artifact@v3
        with:
